@@ -14,6 +14,7 @@
 		F5440CA51793E69F00FDD58E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5440CA41793E69F00FDD58E /* AppDelegate.m */; };
 		F5440CA81793E69F00FDD58E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5440CA61793E69F00FDD58E /* MainMenu.xib */; };
 		F5440CAB1793E69F00FDD58E /* Releases.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5440CA91793E69F00FDD58E /* Releases.xcdatamodeld */; };
+		F5FF4E4A1794912B00400AA6 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF4E491794912B00400AA6 /* Story.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		F5440CA41793E69F00FDD58E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5440CA71793E69F00FDD58E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F5440CAA1793E69F00FDD58E /* Releases.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Releases.xcdatamodel; sourceTree = "<group>"; };
+		F5FF4E481794912B00400AA6 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		F5FF4E491794912B00400AA6 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				F5440C971793E69F00FDD58E /* Releases */,
+				F5FF4E481794912B00400AA6 /* Story.h */,
+				F5FF4E491794912B00400AA6 /* Story.m */,
 				F5440C901793E69F00FDD58E /* Frameworks */,
 				F5440C8F1793E69F00FDD58E /* Products */,
 			);
@@ -172,6 +177,7 @@
 				F5440C9E1793E69F00FDD58E /* main.m in Sources */,
 				F5440CA51793E69F00FDD58E /* AppDelegate.m in Sources */,
 				F5440CAB1793E69F00FDD58E /* Releases.xcdatamodeld in Sources */,
+				F5FF4E4A1794912B00400AA6 /* Story.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +313,7 @@
 				F5440CB01793E69F00FDD58E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

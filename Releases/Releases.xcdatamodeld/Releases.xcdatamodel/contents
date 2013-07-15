@@ -10,7 +10,7 @@
         <attribute name="teamSize" attributeType="Integer 16" defaultValueString="1" syncable="YES"/>
         <relationship name="stories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Story" inverseName="project" inverseEntity="Story" syncable="YES"/>
     </entity>
-    <entity name="Story" syncable="YES">
+    <entity name="Story" representedClassName="Story" syncable="YES">
         <attribute name="businessValue" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="9" defaultValueString="0" syncable="YES"/>
         <attribute name="businessValuePerCent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="costPerCent" optional="YES" attributeType="Decimal" minValueString="0" maxValueString="100" defaultValueString="0" syncable="YES"/>
