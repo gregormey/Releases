@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Story.h"
 
 @implementation AppDelegate
 

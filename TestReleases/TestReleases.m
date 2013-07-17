@@ -26,21 +26,22 @@
 {
     [super setUp];
     
-    NSArray *bundles = [NSArray arrayWithObject:[NSBundle bundleForClass:[self class]]];
-    _mom = [NSManagedObjectModel mergedModelFromBundles:bundles];
-    NSLog(@"Model: %@", _mom);
-    _psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_mom];
+      
+    
+    
+    NSBundle * bundle = [NSBundle bundleForClass:[self class]];
+    _mom = [NSManagedObjectModel mergedModelFromBundles:[NSArray arrayWithObject:bundle]];
+ 
+    _psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: _mom];
+    _store = [_psc addPersistentStoreWithType: NSInMemoryStoreType
+                                configuration: nil
+                                          URL: nil
+                                      options: nil
+                                        error: NULL];
     _moc = [[NSManagedObjectContext alloc] init];
-    [_moc setPersistentStoreCoordinator:_psc];
+    [_moc setPersistentStoreCoordinator: _psc];
+    
 
-    story = (Story *)[NSEntityDescription insertNewObjectForEntityForName:@"Story" inManagedObjectContext:_moc];
-    
-    
-   /* _store = [_psc addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:NULL];
-    STAssertNotNil(_store,@"Unable to create in-memory store");
-    
-    _moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-    [_moc setPersistentStoreCoordinator:_psc];  */
 }
 
 - (void)tearDown
@@ -52,18 +53,18 @@
 
 - (void)testCalcBussinesValue {
     
-    STAssertNotNil(story, @"should have a story");
-  /*  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Story" inManagedObjectContext:_moc];
-    Story* story =  [[Story alloc] initWithEntity:entity insertIntoManagedObjectContext:_moc];
+   
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Story" inManagedObjectContext:_moc];
+    story =  [[Story alloc] initWithEntity:entity insertIntoManagedObjectContext:_moc];
     
     
     int expected = 18;
     [story setRelativeBenefit:9];
-    [story setRelativePenalty:8];
+    [story setRelativePenalty:9];
     [story calcBussinesValue];
 
     STAssertEquals(expected, story.businessValue,
-                   @"We expected Business Value %d, but it was %d",expected,story.businessValue); */
+                   @"We expected Business Value %d, but it was %d",expected,story.businessValue); 
 }
 
 @end
