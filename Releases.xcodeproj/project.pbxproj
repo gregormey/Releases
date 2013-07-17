@@ -19,6 +19,7 @@
 		F5FF4E931794969400400AA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5440C911793E69F00FDD58E /* Cocoa.framework */; };
 		F5FF4E991794969400400AA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5FF4E971794969400400AA6 /* InfoPlist.strings */; };
 		F5FF4E9C1794969400400AA6 /* TestReleases.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF4E9B1794969400400AA6 /* TestReleases.m */; };
+		F5FF4EA3179725D700400AA6 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF4E491794912B00400AA6 /* Story.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -271,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FF4EA3179725D700400AA6 /* Story.m in Sources */,
 				F5FF4E9C1794969400400AA6 /* TestReleases.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +452,7 @@
 				F5FF4EA01794969400400AA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

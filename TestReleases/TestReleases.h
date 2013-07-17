@@ -10,4 +10,6 @@
 
 @interface TestReleases : SenTestCase
 
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @end
