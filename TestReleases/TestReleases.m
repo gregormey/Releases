@@ -18,7 +18,7 @@
     NSPersistentStore *_store;
 }
 
-
+//initializes a managedObjectContext to generate and tests NSManagedObjects 
 - (void)setUp
 {
     [super setUp];
@@ -39,13 +39,15 @@
 
 }
 
+//set all used variables to nil to increase referenze counter
 - (void)tearDown
 {
     [super tearDown];
     _mom = nil; _psc = nil; _moc = nil; _store = nil;
 }
 
-
+//get for the generated NSManagedObjectContext. used in class extentions to
+//create NSManagedObjects
 -(NSManagedObjectContext*)getMoc
 {
     return _moc;

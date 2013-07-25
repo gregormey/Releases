@@ -31,5 +31,7 @@
 - (void) calcBussinesValue;
 - (void) calcBussinesValuePerCent;
 - (void) calcCostPerCent;
+- (void) calcRiskPerCent;
+- (void) calcPriorityCalc; 
 
 @end
