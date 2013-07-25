@@ -36,4 +36,9 @@
     [self setBusinessValuePerCent: [[NSDecimalNumber alloc] initWithFloat:self.businessValue/([bvSum floatValue]/100)]];
 }
 
+-(void) calcCostPerCent {
+    NSNumber *costSum = [ [self project] valueForKeyPath:@"stories.@sum.size" ];
+    [self setCostPerCent: [[NSDecimalNumber alloc] initWithFloat:self.size/([costSum floatValue]/100)]];
+}
+
 @end
