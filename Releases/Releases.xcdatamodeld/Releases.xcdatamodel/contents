@@ -12,7 +12,7 @@
     </entity>
     <entity name="Story" representedClassName="Story" syncable="YES">
         <attribute name="businessValue" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="9" defaultValueString="0" syncable="YES"/>
-        <attribute name="businessValuePerCent" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="businessValuePerCent" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
         <attribute name="costPerCent" optional="YES" attributeType="Decimal" minValueString="0" maxValueString="100" defaultValueString="0" syncable="YES"/>
         <attribute name="ordered" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
         <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -29,6 +29,6 @@
     </entity>
     <elements>
         <element name="Project" positionX="180" positionY="41" width="128" height="163"/>
-        <element name="Story" positionX="-117" positionY="-88" width="128" height="268"/>
+        <element name="Story" positionX="-117" positionY="-88" width="128" height="270"/>
     </elements>
 </model>

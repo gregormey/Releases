@@ -20,7 +20,7 @@
 @property (nonatomic) int16_t relativeBenefit;
 @property (nonatomic) int16_t relativePenalty;
 @property (nonatomic) int16_t businessValue;
-@property (nonatomic) int16_t businessValuePerCent;
+@property (nonatomic, retain) NSDecimalNumber *  businessValuePerCent;
 @property (nonatomic, retain) NSDecimalNumber * costPerCent;
 @property (nonatomic) int16_t relativeRisk;
 @property (nonatomic, retain) NSDecimalNumber * riskPerCent;
@@ -29,5 +29,6 @@
 @property (nonatomic, retain) NSManagedObject *project;
 
 - (void) calcBussinesValue;
+- (void) calcBussinesValuePerCent;
 
 @end

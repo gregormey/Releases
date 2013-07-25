@@ -31,4 +31,9 @@
     [self setBusinessValue:self.relativeBenefit + self.relativePenalty];
 }
 
+-(void) calcBussinesValuePerCent {
+    NSNumber *bvSum = [ [self project] valueForKeyPath:@"stories.@sum.businessValue" ];
+    [self setBusinessValuePerCent: [[NSDecimalNumber alloc] initWithFloat:self.businessValue/([bvSum floatValue]/100)]];
+}
+
 @end
