@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F51C057117A1585E0059AF04 /* TestStory.m in Sources */ = {isa = PBXBuildFile; fileRef = F51C057017A1585E0059AF04 /* TestStory.m */; };
 		F5440C921793E69F00FDD58E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5440C911793E69F00FDD58E /* Cocoa.framework */; };
 		F5440C9C1793E69F00FDD58E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5440C9A1793E69F00FDD58E /* InfoPlist.strings */; };
 		F5440C9E1793E69F00FDD58E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5440C9D1793E69F00FDD58E /* main.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F51C056F17A1585E0059AF04 /* TestStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStory.h; sourceTree = "<group>"; };
+		F51C057017A1585E0059AF04 /* TestStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStory.m; sourceTree = "<group>"; };
 		F5440C8E1793E69F00FDD58E /* Releases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Releases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5440C911793E69F00FDD58E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F5440C941793E69F00FDD58E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -141,6 +144,8 @@
 				F5FF4E9A1794969400400AA6 /* TestReleases.h */,
 				F5FF4E9B1794969400400AA6 /* TestReleases.m */,
 				F5FF4E951794969400400AA6 /* Supporting Files */,
+				F51C056F17A1585E0059AF04 /* TestStory.h */,
+				F51C057017A1585E0059AF04 /* TestStory.m */,
 			);
 			path = TestReleases;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				F5FF4EA517973CA900400AA6 /* Releases.xcdatamodeld in Sources */,
 				F5FF4EA3179725D700400AA6 /* Story.m in Sources */,
 				F5FF4E9C1794969400400AA6 /* TestReleases.m in Sources */,
+				F51C057117A1585E0059AF04 /* TestStory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

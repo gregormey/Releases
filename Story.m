@@ -28,7 +28,7 @@
 @dynamic project;
 
 -(void) calcBussinesValue {
-    [self setBusinessValue:self.relativeBenefit + self.relativeRisk];
+    [self setBusinessValue:self.relativeBenefit + self.relativePenalty];
 }
 
 @end

@@ -16,19 +16,14 @@
     NSPersistentStoreCoordinator *_psc;
     NSManagedObjectContext *_moc;
     NSPersistentStore *_store;
-    Story *story;
-    
 }
 
-@synthesize managedObjectContext = _moc;
 
 - (void)setUp
 {
     [super setUp];
     
       
-    
-    
     NSBundle * bundle = [NSBundle bundleForClass:[self class]];
     _mom = [NSManagedObjectModel mergedModelFromBundles:[NSArray arrayWithObject:bundle]];
  
@@ -51,20 +46,10 @@
 }
 
 
-- (void)testCalcBussinesValue {
-    
-   
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Story" inManagedObjectContext:_moc];
-    story =  [[Story alloc] initWithEntity:entity insertIntoManagedObjectContext:_moc];
-    
-    
-    int expected = 18;
-    [story setRelativeBenefit:9];
-    [story setRelativePenalty:9];
-    [story calcBussinesValue];
-
-    STAssertEquals(expected, story.businessValue,
-                   @"We expected Business Value %d, but it was %d",expected,story.businessValue); 
+-(NSManagedObjectContext*)getMoc
+{
+    return _moc;
 }
+
 
 @end
