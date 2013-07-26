@@ -33,7 +33,6 @@
     [story setRelativeBenefit:9];
     [story setRelativePenalty:9];
     int expected = 18;
-    [story calcBussinesValue];
     int result = story.businessValue;
     
     STAssertEquals(expected, result,

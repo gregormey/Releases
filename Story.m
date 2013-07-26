@@ -28,6 +28,7 @@
 @dynamic project;
 
 
+
 //calclates bussiness value by bulding the sum from relativeBenefit and relativePenalty
 -(void) calcBussinesValue {
     [self setBusinessValue:self.relativeBenefit + self.relativePenalty];
@@ -57,6 +58,40 @@
 -(void) calcPriorityCalc {
     [self setPriorityCalc: [[NSDecimalNumber alloc] initWithFloat:[self.businessValuePerCent floatValue]/([self.costPerCent floatValue]+[self.riskPerCent floatValue])]];
 }
+
+
+- (void)awakeFromInsert {
+    [self observeFields];
+}
+
+- (void)awakeFromFetch {
+    [self observeFields];
+}
+
+-(void)observeField:(NSString*) field{
+    [self addObserver:self forKeyPath:field
+              options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew) context:NULL];
+}
+
+- (void)observeFields {
+    [self observeField:@"relativeBenefit" ];
+    [self observeField:@"relativePenalty" ];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change
+                       context:(void *)context {
+    if ([keyPath isEqualToString:@"relativeBenefit"]||
+        [keyPath isEqualToString:@"relativePenalty"]) {
+            [self calcBussinesValue];
+    }
+}
+
+- (void)willTurnIntoFault {
+    [self removeObserver:self forKeyPath:@"relativeBenefit"];
+    [self removeObserver:self forKeyPath:@"relativePenalty"];
+}
+
+
 
 
 @end
