@@ -11,7 +11,7 @@
 #import <CoreData/CoreData.h>
 
 @interface ObservableNSManagedObject : NSManagedObject
-
--(NSManagedObjectContext*)getMoc;
+ -(NSMutableArray*)getObeservedFields;
+-(void)addObeservedField:(NSString*) field;
 
 @end

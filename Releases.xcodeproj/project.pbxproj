@@ -15,6 +15,7 @@
 		F5440CA51793E69F00FDD58E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5440CA41793E69F00FDD58E /* AppDelegate.m */; };
 		F5440CA81793E69F00FDD58E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5440CA61793E69F00FDD58E /* MainMenu.xib */; };
 		F5440CAB1793E69F00FDD58E /* Releases.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5440CA91793E69F00FDD58E /* Releases.xcdatamodeld */; };
+		F544A7A217BFEF81003C9AE4 /* ObservableNSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F564AA9217B4CA98006EE6E6 /* ObservableNSManagedObject.m */; };
 		F564AA9317B4CA98006EE6E6 /* ObservableNSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F564AA9217B4CA98006EE6E6 /* ObservableNSManagedObject.m */; };
 		F5FF4E4A1794912B00400AA6 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF4E491794912B00400AA6 /* Story.m */; };
 		F5FF4E921794969400400AA6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FF4E911794969400400AA6 /* SenTestingKit.framework */; };
@@ -284,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F544A7A217BFEF81003C9AE4 /* ObservableNSManagedObject.m in Sources */,
 				F5FF4EA517973CA900400AA6 /* Releases.xcdatamodeld in Sources */,
 				F5FF4EA3179725D700400AA6 /* Story.m in Sources */,
 				F5FF4E9C1794969400400AA6 /* TestReleases.m in Sources */,

@@ -28,6 +28,18 @@
 @dynamic project;
 
 
+//overwirte standard initWithEntity. adds names of observed fields
+
+-(id)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(NSManagedObjectContext *)context{
+    
+    self = [super initWithEntity:entity insertIntoManagedObjectContext:context];
+    if (self)
+    {
+        [self addObeservedField:@"relativeBenefit"];
+        [self addObeservedField:@"relativePenalty"];
+    }
+    return self;
+}
 
 //calclates bussiness value by bulding the sum from relativeBenefit and relativePenalty
 -(void) calcBussinesValue {
@@ -60,25 +72,7 @@
 }
 
 
-- (void)awakeFromInsert {
-    [self observeFields];
-}
-
-- (void)awakeFromFetch {
-    [self observeFields];
-}
-
--(void)observeField:(NSString*) field{
-    [self addObserver:self forKeyPath:field
-              options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew) context:NULL];
-}
-
-
-- (void)observeFields {
-    [self observeField:@"relativeBenefit" ];
-    [self observeField:@"relativePenalty" ];
-}
-
+//hub function to call observed field methods
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change
                        context:(void *)context {
     if ([keyPath isEqualToString:@"relativeBenefit"]||
@@ -87,10 +81,6 @@
     }
 }
 
-- (void)willTurnIntoFault {
-    [self removeObserver:self forKeyPath:@"relativeBenefit"];
-    [self removeObserver:self forKeyPath:@"relativePenalty"];
-}
 
 
 
