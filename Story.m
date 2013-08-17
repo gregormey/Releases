@@ -28,17 +28,11 @@
 @dynamic project;
 
 
-//overwirte standard initWithEntity. adds names of observed fields
-
--(id)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(NSManagedObjectContext *)context{
-    
-    self = [super initWithEntity:entity insertIntoManagedObjectContext:context];
-    if (self)
-    {
-        [self addObeservedField:@"relativeBenefit"];
-        [self addObeservedField:@"relativePenalty"];
-    }
-    return self;
+//adds obeserved fields
+-(void)initObservedFields{
+    [super initObservedFields];
+    [self addObeservedField:@"relativeBenefit"];
+    [self addObeservedField:@"relativePenalty"];
 }
 
 //calclates bussiness value by bulding the sum from relativeBenefit and relativePenalty

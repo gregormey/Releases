@@ -12,14 +12,8 @@
     NSMutableArray *_observedFields;
 }
 
--(id)initWithEntity:(NSEntityDescription *)entity insertIntoManagedObjectContext:(NSManagedObjectContext *)context{
-
-    self = [super initWithEntity:entity insertIntoManagedObjectContext:context];
-    if (self)
-    {
-        _observedFields=[NSMutableArray array];
-    }
-    return self;
+-(void)initObservedFields{
+    _observedFields=[NSMutableArray array];
 }
 
 -(NSMutableArray*)getObeservedFields {
@@ -31,10 +25,12 @@
 }
 
 - (void)awakeFromInsert {
+    [self initObservedFields];
     [self observeFields];
 }
 
 - (void)awakeFromFetch {
+    [self initObservedFields];
     [self observeFields];
 }
 

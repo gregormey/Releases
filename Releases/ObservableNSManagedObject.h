@@ -13,5 +13,6 @@
 @interface ObservableNSManagedObject : NSManagedObject
  -(NSMutableArray*)getObeservedFields;
 -(void)addObeservedField:(NSString*) field;
+-(void)initObservedFields;
 
 @end
