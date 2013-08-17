@@ -6,11 +6,10 @@
 //  Copyright (c) 2013 Gregor Meyenberg. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+#import "ObservableNSManagedObject.h"
 
 
-@interface Story : NSManagedObject
+@interface Story : ObservableNSManagedObject
 
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * story;

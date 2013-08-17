@@ -73,6 +73,7 @@
               options:(NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew) context:NULL];
 }
 
+
 - (void)observeFields {
     [self observeField:@"relativeBenefit" ];
     [self observeField:@"relativePenalty" ];

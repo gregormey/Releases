@@ -15,6 +15,7 @@
 		F5440CA51793E69F00FDD58E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5440CA41793E69F00FDD58E /* AppDelegate.m */; };
 		F5440CA81793E69F00FDD58E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5440CA61793E69F00FDD58E /* MainMenu.xib */; };
 		F5440CAB1793E69F00FDD58E /* Releases.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5440CA91793E69F00FDD58E /* Releases.xcdatamodeld */; };
+		F564AA9317B4CA98006EE6E6 /* ObservableNSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F564AA9217B4CA98006EE6E6 /* ObservableNSManagedObject.m */; };
 		F5FF4E4A1794912B00400AA6 /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FF4E491794912B00400AA6 /* Story.m */; };
 		F5FF4E921794969400400AA6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FF4E911794969400400AA6 /* SenTestingKit.framework */; };
 		F5FF4E931794969400400AA6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5440C911793E69F00FDD58E /* Cocoa.framework */; };
@@ -41,6 +42,8 @@
 		F5440CA41793E69F00FDD58E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F5440CA71793E69F00FDD58E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F5440CAA1793E69F00FDD58E /* Releases.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Releases.xcdatamodel; sourceTree = "<group>"; };
+		F564AA9117B4CA98006EE6E6 /* ObservableNSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObservableNSManagedObject.h; path = Releases/ObservableNSManagedObject.h; sourceTree = "<group>"; };
+		F564AA9217B4CA98006EE6E6 /* ObservableNSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObservableNSManagedObject.m; path = Releases/ObservableNSManagedObject.m; sourceTree = "<group>"; };
 		F5FF4E481794912B00400AA6 /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
 		F5FF4E491794912B00400AA6 /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
 		F5FF4E901794969400400AA6 /* TestReleases.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReleases.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +79,8 @@
 		F5440C851793E69F00FDD58E = {
 			isa = PBXGroup;
 			children = (
+				F564AA9117B4CA98006EE6E6 /* ObservableNSManagedObject.h */,
+				F564AA9217B4CA98006EE6E6 /* ObservableNSManagedObject.m */,
 				F5440C971793E69F00FDD58E /* Releases */,
 				F5FF4E481794912B00400AA6 /* Story.h */,
 				F5FF4E491794912B00400AA6 /* Story.m */,
@@ -271,6 +276,7 @@
 				F5440CA51793E69F00FDD58E /* AppDelegate.m in Sources */,
 				F5440CAB1793E69F00FDD58E /* Releases.xcdatamodeld in Sources */,
 				F5FF4E4A1794912B00400AA6 /* Story.m in Sources */,
+				F564AA9317B4CA98006EE6E6 /* ObservableNSManagedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
